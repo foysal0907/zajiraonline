@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zajira Online — দ্রুত, সাশ্রয়ী ও নির্ভরযোগ্য WiFi</title>
+  <meta name="description" content="Zajira Online: আপনার বাড়ি ও ব্যবসার জন্য দ্রুত ও নির্ভরযোগ্য WiFi সার্ভিস। প্ল্যান, সার্ভিস ও কাস্টম সাপোর্ট।" />
+
+  <!-- Simple, modern CSS (single file) -->
+  <style>
+    :root{
+      --navy:#0b2545;
+      --accent:#1e90ff;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f6f9ff;
+      --glass: rgba(255,255,255,0.6);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#ffffff);color:var(--navy);}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;background:var(--accent);border-radius:10px;color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;box-shadow:0 6px 18px rgba(30,144,255,0.18)}
+    nav a{margin-left:18px;color:var(--navy);text-decoration:none;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:36px 0}
+    .hero h1{font-size:36px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:white;padding:12px 18px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    .btn.secondary{background:transparent;color:var(--navy);border:2px solid rgba(11,37,69,0.08)}
+
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 6px 24px rgba(11,37,69,0.06)}
+    .plans{display:flex;gap:18px;margin-top:18px}
+    .plan{flex:1;padding:18px;border-radius:12px;border:1px solid rgba(11,37,69,0.04);display:flex;flex-direction:column;gap:12px}
+    .plan h3{margin:0}
+    .price{font-size:26px;color:var(--accent);font-weight:800}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0}
+    .feature{background:linear-gradient(180deg,#fff,#fbfdff);padding:16px;border-radius:10px;border:1px solid rgba(11,37,69,0.03)}
+
+    footer{margin-top:36px;padding:20px 0;border-top:1px solid rgba(11,37,69,0.04);color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .plans{flex-direction:column}
+    }
+    @media (max-width:520px){
+      .features{grid-template-columns:1fr}
+      header{padding:6px 0}
+      .logo{width:46px;height:46px}
+      .hero h1{font-size:28px}
+    }
+
+    /* small contact form */
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid rgba(11,37,69,0.08);outline:none}
+    input[type="submit"]{background:var(--navy);color:white;border:0;padding:10px 12px;border-radius:10px;cursor:pointer}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">ZO</div>
+        <div>
+          <div style="font-weight:800">Zajira Online</div>
+          <div style="font-size:12px;color:var(--muted)">দ্রুত • নির্ভরযোগ্য • সাশ্রয়ী</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#plans">প্ল্যান</a>
+        <a href="#features">ফিচার</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Zajira Online — আপনার এলাকার দ্রুত ও নির্ভরযোগ্য WiFi</h1>
+        <p>ইন্টারনেটের গতি ও সেবা যাতে বাড়ে — সেটাই আমাদের লক্ষ্য। ব্যবসা হোক বা বাড়ি, সাশ্রয়ী প্ল্যান থেকে কাস্টম কর্পোরেট সল্যুশন — সবই আছে।</p>
+
+        <div class="cta">
+          <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">অতিদ্রুত কানেক্ট করুন</button>
+          <a href="#plans" class="btn secondary">প্ল্যান দেখুন</a>
+        </div>
+
+        <div style="margin-top:22px" class="card">
+          <strong>এক ক্লিকে সাইনআপ</strong>
+          <div style="color:var(--muted);font-size:14px;margin-top:6px">লোকাল ইনস্টলেশন, ২৪/৭ সাপোর্ট এবং দ্রুত সেটআপ।</div>
+          <div class="plans" style="margin-top:12px">
+            <div class="plan">
+              <div style="font-size:13px;color:var(--muted)">বেসিক</div>
+              <h3>১০০ Mbps</h3>
+              <div class="price">৳ ৮৯৯/মাস</div>
+              <div style="margin-top:auto">লাইট ইউজার, ব্রাউজিং ও স্ট্রিমিং এর জন্য উপযুক্ত।</div>
+            </div>
+            <div class="plan">
+              <div style="font-size:13px;color:var(--muted)">স্ট্যান্ডার্ড</div>
+              <h3>৩০০ Mbps</h3>
+              <div class="price">৳ ১৭৯৯/মাস</div>
+              <div style="margin-top:auto">বড় পরিবারের জন্য দ্রুত ও স্থিতিশীল ইন্টারনেট।</div>
+            </div>
+            <div class="plan">
+              <div style="font-size:13px;color:var(--muted)">প্রো</div>
+              <h3>৬০০ Mbps+</h3>
+              <div class="price">৳ ২৯৯৯/মাস</div>
+              <div style="margin-top:auto">ব্যবসা এবং হাই-ডিমান্ড ব্যবহারকারীদের জন্য।</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin:0 0 8px">কিভাবে কাজ করে</h3>
+          <ol style="margin:0 0 12px;padding-left:18px;color:var(--muted)">
+            <li>আপনি সাইনআপ করবেন — অনলাইন বা ফোনে।</li>
+            <li>লোরাল টেকনিশিয়ান এসে ইন্সটল করবে।</li>
+            <li>আপনি পাবেন ২৪/৭ সাপোর্ট ও মনিটরিং।</li>
+          </ol>
+
+          <h4 style="margin-top:8px">বিশেষ সুবিধা</h4>
+          <ul style="margin:6px 0 0;padding-left:18px;color:var(--muted)">
+            <li>নো কনসিউমার কনট্র্যাক্ট ফি</li>
+            <li>কাস্টম প্যাকেজ অনুরোধে উপলব্ধ</li>
+            <li>ফ্রি হোম রাউটার (নিয়মিত প্রমোতে)</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="features">
+      <h2 style="margin-bottom:8px">কেন Zajira Online?</h2>
+      <div class="features">
+        <div class="feature card">
+          <strong>দ্রুত কভারেজ</strong>
+          <div style="color:var(--muted);font-size:14px;margin-top:6px">মাল্টিপল টাওয়ার ও ব্যান্ডউইথ টিউন করে দ্রুত কানেকশন নিশ্চিত করি।</div>
+        </div>
+        <div class="feature card">
+          <strong>বিশ্বস্ত সেবা</strong>
+          <div style="color:var(--muted);font-size:14px;margin-top:6px">২৪/৭ গ্রাহক সাপোর্ট ও লোকাল টেকনিক্যাল ইউনিট।</div>
+        </div>
+        <div class="feature card">
+          <strong>সহজ পেমেন্ট</strong>
+          <div style="color:var(--muted);font-size:14px;margin-top:6px">মোবাইল ব্যাংকিং, ক্রেডিট/ডেবিট ও ক্যাশ — সব অপশন আছে।</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="card">
+        <h3 style="margin:0 0 8px">যোগাযোগ করুন</h3>
+        <p style="color:var(--muted);margin:0 0 12px">নিচে ফর্ম পূরণ করুন — আমরা ২৪ ঘণ্টার মধ্যে রেসপন্ড করবো।</p>
+        <!-- Simple contact form using mailto for quick demo. Replace action with a real endpoint if available. -->
+        <form action="mailto:info@zajiraonline.example.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="আপনার নাম" required />
+          <input type="tel" name="phone" placeholder="ফোন নম্বর" required />
+          <select name="plan">
+            <option value="basic">বেসিক - ১০০ Mbps</option>
+            <option value="standard">স্ট্যান্ডার্ড - ৩০০ Mbps</option>
+            <option value="pro">প্রো - ৬০০ Mbps+</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="আপনার বার্তা"></textarea>
+          <input type="submit" value="প্রসেস করুন" />
+        </form>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:14px">
+          অথবা কল করুন: <strong>+880 1X-XXX-XXXX</strong><br />
+          ইমেইল: <a href="mailto:info@zajiraonline.example.com">info@zajiraonline.example.com</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+        <div>
+          © <strong>Zajira Online</strong> • সকল অধিকার সংরক্ষিত
+        </div>
+        <div style="color:var(--muted);font-size:13px">GitHub Pages দিয়ে হোস্ট করতে: এই ফাইলটি `index.html` নামে আপনার রেপোতে আপলোড করুন এবং Settings → Pages থেকে `main` ব্রাঞ্চ সিলেক্ট করে ডিপ্লয় করুন।</div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
